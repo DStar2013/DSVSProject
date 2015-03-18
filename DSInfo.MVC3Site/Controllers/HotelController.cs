@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DSInfo.MVC3Site.Utility;
 
 namespace DSInfo.MVC3Site.Controllers
 {
@@ -19,6 +20,8 @@ namespace DSInfo.MVC3Site.Controllers
 
         public ActionResult test()
         {
+
+            CorpHotelSearch.getRecHotelList();
             return View();
         }
 
