@@ -22,6 +22,10 @@ namespace DSInfo.MVC3Site.Controllers
         {
 
             CorpHotelSearch.getRecHotelList();
+
+            GetCorpBaseInfo.GetCorpInfo();
+
+
             return View();
         }
 

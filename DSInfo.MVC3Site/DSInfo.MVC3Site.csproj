@@ -38,6 +38,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\commonDll\Corp.Product.CorpHotel.WS.Entity.dll</HintPath>
     </Reference>
+    <Reference Include="Ctrip.Corp.CorpInfo.WS.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\commonDll\Corp\Ctrip.Corp.CorpInfo.WS.Entity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages" />
     <Reference Include="System.Web.Helpers" />
@@ -68,6 +72,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\CorpProduct\CorpHotelSearch.cs" />
+    <Compile Include="Utility\CorpProduct\GetCorpBaseInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />

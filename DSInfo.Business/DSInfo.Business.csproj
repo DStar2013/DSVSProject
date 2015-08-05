@@ -31,11 +31,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Arch.Framework.Utility">
+      <HintPath>..\commonDll\Arch.Framework.Utility.dll</HintPath>
+    </Reference>
     <Reference Include="Corp.Product.CorpHotel.WS.Entity">
       <HintPath>..\commonDll\Corp.Product.CorpHotel.WS.Entity.dll</HintPath>
     </Reference>
+    <Reference Include="Ctrip.Corp.CorpInfo.WS.Entity">
+      <HintPath>..\commonDll\Corp\Ctrip.Corp.CorpInfo.WS.Entity.dll</HintPath>
+    </Reference>
     <Reference Include="Ctrip.SOA.Comm">
       <HintPath>..\commonDll\Ctrip.SOA.Comm.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework.Logging.V2.API">
+      <HintPath>..\commonDll\Framework.Logging.V2.API.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -47,10 +56,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CorpProduct\CorpBaseInfoBusiness.cs" />
     <Compile Include="CorpProduct\HotelSearchBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="pub\ConfigAppSetting.cs" />
     <Compile Include="pub\ConfigConst.cs" />
+    <Compile Include="pub\LogHelper.cs" />
+    <Compile Include="pub\ServiceProxy.cs" />
     <Compile Include="pub\SOAHelper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
